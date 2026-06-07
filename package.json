@@ -1,0 +1,26 @@
+{
+  "name": "blast-drill-designer",
+  "version": "1.0.0",
+  "description": "Advanced blast drilling parameter simulation and optimization",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "core:dev": "pnpm -F @blast-drill/core dev",
+    "backend:dev": "pnpm -F @blast-drill/backend dev",
+    "desktop:dev": "pnpm -F @blast-drill/desktop dev",
+    "mobile:dev": "pnpm -F @blast-drill/mobile dev",
+    "web:dev": "pnpm -F @blast-drill/web dev"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
